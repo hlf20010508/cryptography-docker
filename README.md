@@ -10,7 +10,7 @@ Docker image for built cryptography
 FROM hlf01/cryptography:cryptography41.0.7-python3.8.16-alpine3.17 AS cryptography_builder
 FROM python:3.8.16-alpine3.17
 ...
-COPY --from=cryptography_builder /cryptography /usr/local/lib/python3.8/site-packages/cryptography
+COPY --from=cryptography_builder /packages /usr/local/lib/python3.8/site-packages
 ```
 
 ## Build from source
